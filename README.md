@@ -161,32 +161,10 @@ This launches:
 The backend exposes a REST API for programmatic access:
 
 - `POST /chat` : Send a message to the AI agent
+
   - **Request Body:** `{ "message": "your query", "model": "llama|gpt|...", "web_search": true|false }`
   - **Response:** `{ "response": "agent reply" }`
 
-## 🐳 Docker Deployment
-
-To run the application in a containerized environment:
-
-```bash
-docker build -t langgraph-agent .
-docker run -p 8501:8501 -p 9999:9999 --env-file .env langgraph-agent
-```
-
-## 🔄 CI/CD Pipeline
-
-Jenkins is integrated for automated build and deployment. See `Jenkinsfile` for pipeline configuration.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-- **Request Body:** `{ "message": "your query", "model": "llama|gpt|...", "web_search": true|false }`
-- **Response:** `{ "response": "agent reply" }`
 - Request body:
   ```json
   {
