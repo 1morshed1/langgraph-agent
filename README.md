@@ -162,9 +162,6 @@ The backend exposes a REST API for programmatic access:
 
 - `POST /chat` : Send a message to the AI agent
 
-  - **Request Body:** `{ "message": "your query", "model": "llama|gpt|...", "web_search": true|false }`
-  - **Response:** `{ "response": "agent reply" }`
-
 - Request body:
   ```json
   {
